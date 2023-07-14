@@ -8,28 +8,98 @@ Recuerda que estas respuestas (o al  menos la mayoría) NO SON ABSOLUTAS. Es com
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es una variable y para qué sirve?
+
+Espacio reservado en memoria donde se puede guardar información, dependiendo de los tipos y estructuras de datos que soporte el lenguaje que se está utilizando.
+
 - ¿Cuál es la diferencia entre declarar e inicializar una variable?
+
+DECLARAR: es decirle a JS que se está creando una variable con su nombre.  
+let nombre;
+
+INICIALIZAR: cuando se le asigna un valor a una variable. 
+```
+let nombre = "Bapa";
+```
+
+REINICIALIZAR: cuando se le cambia el valor de una variable.
+```
+let nombre = "Bapa";
+nombre = "Loki";
+```
+
+*LET: permite cambiar el valor de las variables en el futuro.
+
+EJEMPLO:
+``` 
+let nombre = "Bapa";
+nombre = "Loki";
+console.log(nombre); // "Loki"
+```
+
+*CONST: no se puede cambiar su valor. Son variables cuyo valor siempre va a ser el mismo, es decir, son constantes. 
+
+EJEMPLO:
+```
+const apellido = "Caloguerea";
+apellido = "Bozinovich";
+console.log(apellido); // Uncaught TypeError
+```
+
 - ¿Cuál es la diferencia entre sumar números y concatenar strings?
 - ¿Cuál operador me permite sumar o concatenar?
 
+En las variables no sólo se pueden guardar valore fijos, si no, que también se pueden utilizar operadores como el de suma, resta, multiplicación, división, entre otros, para obtener un resultado dependiendo de otras variables.
+
+EJEMPLO:
+```
+let suma = 2 + 2 // 4
+let sumaString = "Hola, " + "Loki"; // "Hola, Loki"
+```
+
+El operador que nos permite sumar o concatenar es +. Este operador nos permite sumar números cuando lo utilizamos con números, pero cuando se utiliza con strings lo que hace es unir (concatenar) ambos strings. 
+
 ### 2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 
-- Nombre
-- Apellido
-- Nombre de usuario en Platzi
-- Edad
-- Correo electrónico
-- Mayor de edad
-- Dinero ahorrado
-- Deudas
+- Nombre: String
+- Apellido: String
+- Nombre de usuario en Platzi: String
+- Edad: Number
+- Correo electrónico: String
+- Mayor de edad: Boolean
+- Dinero ahorrado: Number
+- Deudas: Number
 
 ### 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+
+```
+let name = "Loki";
+let lastName = "Caloguerea";
+let userName = "Loki31"
+let age = 6;
+let email = "loki.31@gmail.com";
+let ofLegalAge = true;
+let savedMoney = 500000;
+let debt = 15000;
+```
 
 ### 4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
 - Nombre completo (nombre y apellido)
+
+```
+let name = "Loki";
+let lastName = "Caloguerea";
+let fullName = name + " " + lastName;
+console.log(fullName); // "Loki Caloguerea"
+```
 - Dinero real (dinero ahorrado menos deudas)
 
+```
+let savedMoney = 500000;
+let debt = 15000;
+let actualMoney = savedMoney - debt;
+console.log(actualMoney); // 485000
+```
 
 ## Funciones
 
