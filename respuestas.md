@@ -14,15 +14,17 @@ Espacio reservado en memoria donde se puede guardar información, dependiendo de
 - ¿Cuál es la diferencia entre declarar e inicializar una variable?
 
 DECLARAR: es decirle a JS que se está creando una variable con su nombre.  
+```js
 let nombre;
+```
 
 INICIALIZAR: cuando se le asigna un valor a una variable. 
-```
+```js
 let nombre = "Bapa";
 ```
 
 REINICIALIZAR: cuando se le cambia el valor de una variable.
-```
+```js
 let nombre = "Bapa";
 nombre = "Loki";
 ```
@@ -30,7 +32,7 @@ nombre = "Loki";
 *LET: permite cambiar el valor de las variables en el futuro.
 
 EJEMPLO:
-``` 
+```js
 let nombre = "Bapa";
 nombre = "Loki";
 console.log(nombre); // "Loki"
@@ -39,7 +41,7 @@ console.log(nombre); // "Loki"
 *CONST: no se puede cambiar su valor. Son variables cuyo valor siempre va a ser el mismo, es decir, son constantes. 
 
 EJEMPLO:
-```
+```js
 const apellido = "Caloguerea";
 apellido = "Bozinovich";
 console.log(apellido); // Uncaught TypeError
@@ -51,7 +53,7 @@ console.log(apellido); // Uncaught TypeError
 En las variables no sólo se pueden guardar valore fijos, si no, que también se pueden utilizar operadores como el de suma, resta, multiplicación, división, entre otros, para obtener un resultado dependiendo de otras variables.
 
 EJEMPLO:
-```
+```js
 let suma = 2 + 2 // 4
 let sumaString = "Hola, " + "Loki"; // "Hola, Loki"
 ```
@@ -71,7 +73,7 @@ El operador que nos permite sumar o concatenar es +. Este operador nos permite s
 
 ### 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
-```
+```js
 let name = "Loki";
 let lastName = "Caloguerea";
 let userName = "Loki31"
@@ -86,7 +88,7 @@ let debt = 15000;
 
 - Nombre completo (nombre y apellido)
 
-```
+```js
 let name = "Loki";
 let lastName = "Caloguerea";
 let fullName = name + " " + lastName;
@@ -94,7 +96,7 @@ console.log(fullName); // "Loki Caloguerea"
 ```
 - Dinero real (dinero ahorrado menos deudas)
 
-```
+```js
 let savedMoney = 500000;
 let debt = 15000;
 let actualMoney = savedMoney - debt;
