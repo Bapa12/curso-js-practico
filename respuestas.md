@@ -108,18 +108,76 @@ console.log(actualMoney); // 485000
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es una función?
+
+Las funciones permiten encapsular (guardar) bloques de código para reutilizarlos y ejecutarlos en el futuro.
+Una función trabaja con parámetros y argumentos. 
+
+```js
+function fullName(name, lastName) {
+    return name + " " + lastName;
+} 
+
+fullName("Loki", "Caloguerea");
+```
+Una función puede recibir parámetros para que dinámicamente cada vez que se llame a fullName no se tenga siempre el mismo name y lastName, si no, que luego del nombre de la función y entre paréntesis, se defina name y lastName, para que sean estos parámetros los que  se concatenen o ejecuten cualquier otra acción, dependiendo de lo que se le indica a la función que realice.
+
 - ¿Cuándo me sirve usar una función en mi código?
+
+Nos sirve cuando se tiene código repetido, cuando se tienen variables que son muy similares unas con otras o incluso cuando se tienen bloques completos de código que siempre hacen lo mismo una y otra vez, cambiando sólo ciertos valores que podrían ser parámetros o argumentos, que se pueden encapsular para reutilizar más de una vez en el futuro. 
+
+También sirven para ordenar y mejorar la legibilidad del código. 
+
 - ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+
+EJEMPLO
+```js
+function fullName(name, lastName) {
+    return name + " " + lastName;
+} 
+
+fullName("Loki", "Caloguerea");
+```
+PARÁMETROS: son lo que recibe una función cuando se está creando. Es lo que va dentro de los paréntesis luego del nombre de la función. 
+
+EJEMPLO: 
+```js
+function fullName(name, lastName) {
+    return name + " " + lastName;
+}
+```
+
+ARGUMENTOS: cuando se va a ejecutar una función, ésta no va a recibir parámetros, sino, que se le envían argumentos. 
+
+EJEMPLO: 
+
+```js
+fullName("Loki", "Caloguerea");
+```
+
 
 ### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
-```
+```js
 const name = "Juan David";
 const lastname = "Castro Gallego";
 const completeName = name + lastname;
 const nickname = "juandc";
 
 console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+```
+
+```js
+function fullName(name, lastName) {
+    return name + " " + lastName;
+}
+
+function greeting(name, lastName, nickname) {
+    const completeName = fullName(name, lastName);
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+} 
+
+greeting("Loki", "Caloguerea", "Lokimaru");
+// Mi nombre es Loki Caloguerea, pero prefiero que me digas Lokimaru.
 ```
 
 
