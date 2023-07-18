@@ -13,11 +13,8 @@ Espacio reservado en memoria donde se puede guardar información, dependiendo de
 
 - ¿Cuál es la diferencia entre declarar e inicializar una variable?
 
-<<<<<<< HEAD
+
 **DECLARAR:** es decirle a JS que se está creando una variable con su nombre.  
-=======
-**DECLARAR**: es decirle a JS que se está creando una variable con su nombre.  
->>>>>>> refs/remotes/origin/test-javascript
 ```js
 let nombre;
 ```
