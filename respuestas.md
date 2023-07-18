@@ -13,23 +13,23 @@ Espacio reservado en memoria donde se puede guardar información, dependiendo de
 
 - ¿Cuál es la diferencia entre declarar e inicializar una variable?
 
-DECLARAR: es decirle a JS que se está creando una variable con su nombre.  
+**DECLARAR:** es decirle a JS que se está creando una variable con su nombre.  
 ```js
 let nombre;
 ```
 
-INICIALIZAR: cuando se le asigna un valor a una variable. 
+**INICIALIZAR:** cuando se le asigna un valor a una variable. 
 ```js
 let nombre = "Bapa";
 ```
 
-REINICIALIZAR: cuando se le cambia el valor de una variable.
+**REINICIALIZAR:** cuando se le cambia el valor de una variable.
 ```js
 let nombre = "Bapa";
 nombre = "Loki";
 ```
 
-*LET: permite cambiar el valor de las variables en el futuro.
+**LET:** permite cambiar el valor de las variables en el futuro.
 
 EJEMPLO:
 ```js
@@ -38,7 +38,7 @@ nombre = "Loki";
 console.log(nombre); // "Loki"
 ```
 
-*CONST: no se puede cambiar su valor. Son variables cuyo valor siempre va a ser el mismo, es decir, son constantes. 
+**CONST:** no se puede cambiar su valor. Son variables cuyo valor siempre va a ser el mismo, es decir, son constantes. 
 
 EJEMPLO:
 ```js
@@ -58,18 +58,18 @@ let suma = 2 + 2 // 4
 let sumaString = "Hola, " + "Loki"; // "Hola, Loki"
 ```
 
-El operador que nos permite sumar o concatenar es +. Este operador nos permite sumar números cuando lo utilizamos con números, pero cuando se utiliza con strings lo que hace es unir (concatenar) ambos strings. 
+El operador que nos permite sumar o concatenar es **+**. Este operador nos permite sumar números cuando lo utilizamos con números, pero cuando se utiliza con strings lo que hace es unir (concatenar) ambos strings. 
 
 ### 2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 
-- Nombre: String
-- Apellido: String
-- Nombre de usuario en Platzi: String
-- Edad: Number
-- Correo electrónico: String
-- Mayor de edad: Boolean
-- Dinero ahorrado: Number
-- Deudas: Number
+- Nombre: _String_
+- Apellido: _String_
+- Nombre de usuario en Platzi: _String_
+- Edad: _Number_
+- Correo electrónico: _String_
+- Mayor de edad: _Boolean_
+- Dinero ahorrado: _Number_
+- Deudas: _Number_
 
 ### 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
@@ -137,7 +137,7 @@ function fullName(name, lastName) {
 
 fullName("Loki", "Caloguerea");
 ```
-PARÁMETROS: son lo que recibe una función cuando se está creando. Es lo que va dentro de los paréntesis luego del nombre de la función. 
+**PARÁMETROS:** son lo que recibe una función cuando se está creando. Es lo que va dentro de los paréntesis luego del nombre de la función. 
 
 EJEMPLO: 
 ```js
@@ -146,7 +146,7 @@ function fullName(name, lastName) {
 }
 ```
 
-ARGUMENTOS: cuando se va a ejecutar una función, ésta no va a recibir parámetros, sino, que se le envían argumentos. 
+**ARGUMENTOS:** cuando se va a ejecutar una función, ésta no va a recibir parámetros, sino, que se le envían argumentos. 
 
 EJEMPLO: 
 
@@ -191,9 +191,9 @@ Forma en la que se ejecuta un bloque de código u otro dependiendo de alguna con
 
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
 
-*IF (ELSE IF y ELSE): permite realizar validaciones completamente distintas en cada validación o condicional. 
+**IF (ELSE IF y ELSE):** permite realizar validaciones completamente distintas en cada validación o condicional. 
 
-*SWITCH: permite agregar una variable o algo que se quiera validar y luego por medio de cases (casos) comenzar a preguntar si esa condición o esa variable cumple con cierta condición. En Switch todos los cases se comparan con la misma variable o condición que se define en el switch. 
+**SWITCH:** permite agregar una variable o algo que se quiera validar y luego por medio de cases (casos) comenzar a preguntar si esa condición o esa variable cumple con cierta condición. En Switch todos los cases se comparan con la misma variable o condición que se define en el switch. 
 
 - ¿Puedo combinar funciones y condicionales?
 
@@ -251,7 +251,7 @@ Es la forma de ejecutar un bloque de código hasta que se cumpla cierta condici�
 
 - ¿Qué tipos de ciclos existen en JavaScript?
 
-*WHILE: realiza la validación antes de ejecutar la primera vez el bloque de código. Este ciclo hace una validación y luego se tiene el bloque de código, pero el bloque de código no está obligado a cambiar esa condición en algún momento para que pare el ciclo.  
+**WHILE:** realiza la validación antes de ejecutar la primera vez el bloque de código. Este ciclo hace una validación y luego se tiene el bloque de código, pero el bloque de código no está obligado a cambiar esa condición en algún momento para que pare el ciclo.  
 
 EJEMPLO CICLO WHILE:
 ```js
@@ -262,7 +262,7 @@ while(i < 0) {
 }
 ```
 
-*FOR: automáticamente obliga a definir qué pasa al principio y al final de cada ejecución de código en el ciclo. Automáticamente pide que se inicialice una variable, que se defina algún momento en el que el ciclo debe terminar la validación como tal y además alguna variable que deba cambiar.  
+**FOR:** automáticamente obliga a definir qué pasa al principio y al final de cada ejecución de código en el ciclo. Automáticamente pide que se inicialice una variable, que se defina algún momento en el que el ciclo debe terminar la validación como tal y además alguna variable que deba cambiar.  
 
 EJEMPLO CICLO FOR:
 ```js
@@ -276,7 +276,7 @@ for (let i = 0; i < 5, i++) {
 // En resumen: en el ejemplo, se le indica a una variable que empiece en 0 (cero), luego que ejecute el bloque de código hasta que la variable llegue a 4 y cada vez que se termine de ejecutar una vuelta del ciclo, se va a sumar 1 a esa variable que se creó al principio.  
 ```
 
-*DO-WHILE: es igual al ciclo WHILE, pero DO-WHILE la primera vez no realiza la validación, primero ejecuta el código, luego realiza la validación y dependiendo de esa validación vuelve a ejecutar el ciclo. 
+**DO-WHILE:** es igual al ciclo WHILE, pero DO-WHILE la primera vez no realiza la validación, primero ejecuta el código, luego realiza la validación y dependiendo de esa validación vuelve a ejecutar el ciclo. 
 
 - ¿Qué es un ciclo infinito y por qué es un problema?
 
@@ -334,12 +334,99 @@ while (answer != '4') {
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un array?
+
+Es una lista de elementos.
+
+EJEMPLO:
+```js
+const myArray = ["Loki", "Ñaño", "Bapa"];
+```
+
 - ¿Qué es un objeto?
+
+Es una lista de elementos, pero cada elemento tiene un nombre clave y un valor.  
+
+EJEMPLO:
+```js
+const myObject = {
+    name: "Loki",
+    age: 6,
+    likes: "Chicken",
+    dislikes: "Going to the vet"
+};
+```
+
 - ¿Cuándo es mejor usar objetos o arrays?
+
+**ARARYS:** cuando lo que se hace en un elemento es lo mismo que en todo lo demás (la regla se puede incumplir).
+
+**OBJETO:** cuando los nombres de cada elemento son importantes para un algoritmo. 
+
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+Sí. Los arrays pueden guardar objetos y los objetos pueden guardar arrays entre sus propiedades.
+
+EJEMPLO:
+```js
+const myObject = {
+    name: "Loki",
+    age: 6,
+    likes: ["Chicken", "Going for a walk", "Playing", "Sleeping"],
+    dislikes: "Going to the vet"
+};
+```
+
+EJEMPLO:
+```js
+const myArray = ["Loki", "Ñaño", "Bapa" { nombre: "Lokimaru", edad: 6}];
+```
 
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
+```js
+const myArray = ["Mango", "Fresa", "Manzana", "Pera", "Uva", "Papaya"];
+
+function printFirstElement(array) {
+    console.log(array[0])
+}
+
+printFirstElement(myArray); // Mango
+```
+
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
+```js
+const myArray = ["Mango", "Fresa", "Manzana", "Pera", "Uva", "Papaya"];
+
+function printAllElements(array) {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+}
+
+printAllElements(myArray); 
+```
+
 ### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+```js
+const myCar = {
+    brand: "Mazda",
+    model: "CX-3", 
+    color: "Grafito",
+    year: 2022
+};
+
+function printAllElementsObject(obj) {
+   const array = Object.values(obj)
+   for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+   }
+}
+
+printAllElementsObject(myCar);
+// Mazda
+// CX-3
+// Grafito
+// 2022
+```
