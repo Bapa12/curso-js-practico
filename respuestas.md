@@ -29,7 +29,7 @@ let nombre = "Bapa";
 nombre = "Loki";
 ```
 
-* LET: permite cambiar el valor de las variables en el futuro.
+*LET: permite cambiar el valor de las variables en el futuro.
 
 EJEMPLO:
 ```js
