@@ -186,12 +186,22 @@ greeting("Loki", "Caloguerea", "Lokimaru");
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un condicional?
+
+Forma en la que se ejecuta un bloque de código u otro dependiendo de alguna condición o validación. 
+
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+
+*IF (ELSE IF y ELSE): permite realizar validaciones completamente distintas en cada validación o condicional. 
+
+*SWITCH: permite agregar una variable o algo que se quiera validar y luego por medio de cases (casos) comenzar a preguntar si esa condición o esa variable cumple con cierta condición. En Switch todos los cases se comparan con la misma variable o condición que se define en el switch. 
+
 - ¿Puedo combinar funciones y condicionales?
+
+Sí, las funciones pueden encapsular cualquier bloque de código, incluyendo condicionales. 
 
 ### 2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 
-```
+```js
 const tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
@@ -207,6 +217,22 @@ switch (tipoDeSuscripcion) {
    case "ExpertPlus":
        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
        break;
+}
+```
+
+```js
+const tipoDeSuscripcion = "Basic";
+
+if(tipoDeSuscripcion == "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+} else if(tipoDeSuscripcion == "Basic") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+} else if(tipoDeSuscripcion == "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+} else if(tipoDeSuscripcion == "ExpertPlus") {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+} else {
+    console.log("No tienes ningún tipo de suscripción");
 }
 ```
 
