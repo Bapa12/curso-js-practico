@@ -13,7 +13,7 @@ Espacio reservado en memoria donde se puede guardar información, dependiendo de
 
 - ¿Cuál es la diferencia entre declarar e inicializar una variable?
 
-DECLARAR: es decirle a JS que se está creando una variable con su nombre.  
+**DECLARAR**: es decirle a JS que se está creando una variable con su nombre.  
 ```js
 let nombre;
 ```
