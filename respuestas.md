@@ -50,7 +50,7 @@ console.log(apellido); // Uncaught TypeError
 - ¿Cuál es la diferencia entre sumar números y concatenar strings?
 - ¿Cuál operador me permite sumar o concatenar?
 
-En las variables no sólo se pueden guardar valore fijos, si no, que también se pueden utilizar operadores como el de suma, resta, multiplicación, división, entre otros, para obtener un resultado dependiendo de otras variables.
+En las variables no sólo se pueden guardar valores fijos, si no, que también se pueden utilizar operadores como el de suma, resta, multiplicación, división, entre otros, para obtener un resultado dependiendo de otras variables.
 
 EJEMPLO:
 ```js
@@ -246,13 +246,49 @@ if(tipoDeSuscripcion == "Free") {
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un ciclo?
+
+Es la forma de ejecutar un bloque de código hasta que se cumpla cierta condición. Son similares a los condicionales, porque también están validando condiciones (realizando validaciones), pero lo ejecutan hasta que esa condición se cumpla. 
+
 - ¿Qué tipos de ciclos existen en JavaScript?
+
+*WHILE: realiza la validación antes de ejecutar la primera vez el bloque de código. Este ciclo hace una validación y luego se tiene el bloque de código, pero el bloque de código no está obligado a cambiar esa condición en algún momento para que pare el ciclo.  
+
+EJEMPLO CICLO WHILE:
+```js
+let i = 0
+
+while(i < 0) {
+    // Código a ejecutar y agregar variable i++, i--, dependiendo de la variable (puede i, j, k, entre otros).
+}
+```
+
+*FOR: automáticamente obliga a definir qué pasa al principio y al final de cada ejecución de código en el ciclo. Automáticamente pide que se inicialice una variable, que se defina algún momento en el que el ciclo debe terminar la validación como tal y además alguna variable que deba cambiar.  
+
+EJEMPLO CICLO FOR:
+```js
+for (let i = 0; i < 5, i++) {
+    // Código a ejecutar
+}
+
+// let i = 0 --> creación de la variable
+// i < 5 --> validación (que cierta variable sea "true", "false", que sea "mayor", "menor", lo que se requiera.)
+// i++ --> indica lo que se hace con esa primera variable que se creó. 
+// En resumen: en el ejemplo, se le indica a una variable que empiece en 0 (cero), luego que ejecute el bloque de código hasta que la variable llegue a 4 y cada vez que se termine de ejecutar una vuelta del ciclo, se va a sumar 1 a esa variable que se creó al principio.  
+```
+
+*DO-WHILE: es igual al ciclo WHILE, pero DO-WHILE la primera vez no realiza la validación, primero ejecuta el código, luego realiza la validación y dependiendo de esa validación vuelve a ejecutar el ciclo. 
+
 - ¿Qué es un ciclo infinito y por qué es un problema?
+
+Es cuando la validación de los condicionales para terminar de ejecutar un ciclo nunca se cumple y termina toteando (dañando) la aplicación (e.j. cuando el navegador ya no puede más de tanta ejecución de ese bloque de código).  
+
 - ¿Puedo mezclar ciclos y condicionales?
+
+Sí, los ciclos de por sí ya son una especie de condicionales, sólo que se van a estar ejecutando hasta que ese condicional falle. Pero, tener un condicional que ayude a parar la ejecución del código, no impide tener otros condicionales.   
 
 ### 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
-```
+```js
 for (let i = 0; i < 5; i++) {
     console.log("El valor de i es: " + i);
 }
@@ -262,10 +298,36 @@ for (let i = 10; i >= 2; i--) {
 }
 ```
 
+```js
+let i = 0;
+
+while(i < 5) {
+    console.log("El valor de i es: " + i);
+    i++;
+}
+```
+
+```js
+let i = 10;
+
+while(i >= 2) {
+    console.log("El valor de i es: " + i);
+    i--;
+}
+```
+
 ### 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es `2 + 2`. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 
 > 💡 Pista: puedes usar la función prompt de JavaScript.
 
+```js
+let answer;
+
+while (answer != '4') {
+    let question = prompt('¿Cuánto es 2 + 2?');
+    answer = question;
+}
+```
 
 ## Listas
 
