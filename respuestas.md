@@ -207,16 +207,16 @@ const tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
    case "Free":
-       console.log("Solo puedes tomar los cursos gratis");
+       console.log("Solo puedes tomar los cursos gratis.");
        break;
    case "Basic":
-       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes.");
        break;
    case "Expert":
-       console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un año.");
        break;
    case "ExpertPlus":
-       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año.");
        break;
 }
 ```
@@ -225,22 +225,67 @@ switch (tipoDeSuscripcion) {
 const tipoDeSuscripcion = "Basic";
 
 if(tipoDeSuscripcion == "Free") {
-    console.log("Solo puedes tomar los cursos gratis");
+    console.log("Solo puedes tomar los cursos gratis.");
 } else if(tipoDeSuscripcion == "Basic") {
-    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes.");
 } else if(tipoDeSuscripcion == "Expert") {
-    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año.");
 } else if(tipoDeSuscripcion == "ExpertPlus") {
-    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año.");
 } else {
-    console.log("No tienes ningún tipo de suscripción");
+    console.log("No tienes ningún tipo de suscripción.");
 }
 ```
 
 ### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 
-> 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays y un solo condicional. 😏
+```js
+function conseguirTipoSuscripcion(suscripcion) {
+    if (suscripcion == "Free") {
+        console.log("Solo puedes tomar los cursos gratis.");
+        return;
+    } 
+    if (suscripcion == "Basic") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes.");
+        return;
+    }
+    if (suscripcion == "Expert") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un año.");
+        return;
+    }
+    if (suscripcion == "ExpertPlus") {
+        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año.");
+        return;
+    }
 
+    console.warn('Ese tipo de suscripción no existe.');
+}
+
+conseguirTipoSuscripcion('Free'); // Solo puedes tomar los cursos gratis
+```
+
+> 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
+
+```js
+const tipoDeSuscripciones = {
+    free: 'Solo puedes tomar los cursos gratis.',
+    basic: 'Puedes tomar casi todos los cursos de Platzi durante un mes.',
+    expert: 'Puedes tomar casi todos los cursos de Platzi durante un año.',
+    expertplus: 'Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año.'
+};
+
+function conseguirTipoSuscripcion(suscripcion) {
+    if(tipoDeSuscripciones[suscripcion]) {
+        console.log(tipoDeSuscripciones[suscripcion]);
+        return;
+    }
+
+    console.warn('Ese tipo de suscripción no existe.');
+}
+
+conseguirTipoSuscripcion('expertplus'); 
+// Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año.
+```
 
 ## Ciclos
 
